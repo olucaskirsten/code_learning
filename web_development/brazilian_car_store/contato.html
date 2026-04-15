@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SuperCarros.com</title>
+    <link rel="stylesheet" href="css/contato.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-img" src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <a class="nav-txt" href="index.html">Home</a>
+            <a class="nav-txt" href="carros.html">Carros</a>
+            <a class="nav-txt" href="eventos.html">Eventos</a>
+            <a class="nav-txt" href="sobre-nos.html">Sobre Nós</a>
+            <a class="btn-contato" href="contato.html">Contato</a>
+        </nav>
+
+        <button id="btnToggle" class="btn-mobile" aria-controls="navMobile" aria-expanded="false">
+            <img class="icone" src="img/menu.png" alt="menu" width="20">
+        </button>
+
+        <nav class="nav-mobile" id="nav-mobile">
+            <a class="nav-txt" href="index.html">Home</a>
+            <a class="nav-txt" href="carros.html">Carros</a>
+            <a class="nav-txt" href="eventos.html">Eventos</a>
+            <a class="nav-txt" href="sobre-nos.html">Sobre Nós</a>
+            <a class="btn-contato" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="imagem">
+            <img class="imagem-loja" src="img/imagem-contato.png" alt="foto loja">
+        </section>
+
+        <aside>
+            <h1 class="titulo-form" id="title">fale conosco</h1>
+
+            <p class="subtitulo-form">Estamos prontos para tirar suas dúvidas e ajudar você a encontrar o carro dos seus sonhos, deixe abaixo suas dúvidas e sugestões, caso tenha. </p>
+
+            <p>👉 Deixe seus dados e vamos conversar!</p>
+
+            <form action="#" method="post" novalidate>
+                <div class="box">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                </div>
+
+                <div class="box">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="box">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+                </div>
+
+                <!-- Campo de seleção (select) -->
+                <div class="box">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione uma opção</option>
+                        <option value="compra">Quero comprar um carro</option>
+                        <option value="evento">Carro para evento</option>
+                        <option value="duvida">Tirar dúvidas</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="checkbox-box">
+                    <input type="checkbox" id="aceito" name="aceito">
+                    <label for="aceito">Aceito receber mensagens e ofertas via WhatsApp</label>
+                </div>
+
+
+                <div class="box">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+
+                <div class="submit-botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+
+    <section id="contato">
+        <div class="infos-loja">
+            <h2>Visite nossa loja</h2>
+            <p>Atendimento exclusivo, test-drive e consultoria para encontrar o carro ideal.</p>
+
+            <p><strong>📍 Endereço:</strong> R. Gen. Mário Tourinho, 1215 — Curitiba, PR</p>
+            <p><strong>📞 Telefone:</strong> (41) 3043-1301</p>
+            <p><strong>⏰ Atendimento:</strong> Seg–Sex 9h–19h | Sáb 9h–14h</p>
+
+            <a class="btn-loja" href="#title">Falar com especialista</a>
+        </div>
+
+        <div class="loja">
+            <img class="ft-loja" src="img/imagem-contato-2.png" alt="foto-loja">
+        </div>
+    </section>
+
+    <div class="mapa">
+        <img id="mapa-imagem" class="img-mapa" src="img/mapa.png" alt="mapa">
+    </div>
+
+    <footer>
+        <nav class="nav-rodape">
+            <a class="nav-txt nav-footer" href="index.html">Home</a>
+            <a class="nav-txt nav-footer" href="carros.html">Carros</a>
+            <a class="nav-txt nav-footer" href="eventos.html">Eventos</a>
+            <a class="nav-txt nav-footer" href="sobre-nos.html">Sobre Nós</a>
+            <a class="nav-txt nav-footer" href="contato.html">Contato</a>
+        </nav>
+
+        <p>© 2025 SuperCarros — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/design.js"></script>
+</body>
+
+</html>

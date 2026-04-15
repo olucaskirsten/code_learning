@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCarros.com</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo-img" src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <a class="nav-txt" href="index.html">Home</a>
+            <a class="nav-txt" href="carros.html">Carros</a>
+            <a class="nav-txt" href="eventos.html">Eventos</a>
+            <a class="nav-txt" href="sobre-nos.html">Sobre Nós</a>
+            <a class="btn-contato" href="contato.html">Contato</a>
+        </nav>
+
+        <button id="btnToggle" class="btn-mobile" aria-controls="navMobile" aria-expanded="false">
+            <img class="icone" src="img/menu.png" alt="menu" width="20">
+        </button>
+
+        <nav class="nav-mobile" id="nav-mobile">
+            <a class="nav-txt" href="index.html">Home</a>
+            <a class="nav-txt" href="carros.html">Carros</a>
+            <a class="nav-txt" href="eventos.html">Eventos</a>
+            <a class="nav-txt" href="sobre-nos.html">Sobre Nós</a>
+            <a class="btn-contato" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero-home">
+            <div>
+                <h1 id="typing"></h1>
+                <p class="txt-hero">Carros premium selecionados, procedência verificada e atendimento personalizado
+                    para<br>transformar cada
+                    trajeto em uma experiência inesquecível.</p>
+                <a id="botao-hero-home" class="btn-hero" href="carros.html">ENCONTRAR SEU PRÓXIMO CARRO!</a>
+            </div>
+        </section>
+
+        <!-- CARROS DESTAQUE -->
+        <section id="carros">
+            <h3 id="favoritos">OS FAVORITOS DA NOSSA GARAGEM!</h3>
+            <p>Potência, design e exclusividade — três máquinas que definem o padrão do extraordinário.</p>
+
+            <div class="bloco-carros">
+                <div class="bloco-1 blocos-dsgn">
+                    <img class="img-bloco" src="img/audi-q3.png" alt="audi">
+                    <h4>Pura Performance</h4>
+                    <p>Motor de alta resposta, aerodinâmica ativa e tecnologia de pista aplicada ao dia a dia.</p>
+                </div>
+
+                <div class="bloco-2 blocos-dsgn">
+                    <img class="img-bloco" src="img/mercedes-benz.png" alt="mustang">
+                    <h4>Luxo em Movimento</h4>
+                    <p>Acabamento premium, tecnologia embarcada e conforto absoluto para quem prioriza presença.</p>
+                </div>
+
+                <div class="bloco-3 blocos-dsgn">
+                    <img class="img-bloco" src="img/bmw-x3.png" alt="audi">
+                    <h4>Ícone de Exclusividade</h4>
+                    <p>Edição limitada e presença única — para quem não aceita ser apenas mais um na rua.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO / LOCALIZAÇÃO -->
+        <section id="contato">
+            <div class="loja">
+                <img class="ft-loja" src="img/imagem-sobrenos.png" alt="foto-loja">
+            </div>
+
+            <div class="infos-loja">
+                <h2>Visite nossa loja</h2>
+                <p>Atendimento exclusivo, test-drive e consultoria para encontrar o carro ideal.</p>
+
+                <p><strong>📍 Endereço:</strong> R. Gen. Mário Tourinho, 1215 — Curitiba, PR</p>
+                <p><strong>📞 Telefone:</strong> (41) 3043-1301</p>
+                <p><strong>⏰ Atendimento:</strong> Seg–Sex 9h–19h | Sáb 9h–14h</p>
+
+                <a class="btn-loja" href="https://www.whatsapp.com">Falar com especialista</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="nav-rodape">
+            <a class="nav-txt nav-footer" href="index.html">Home</a>
+            <a class="nav-txt nav-footer" href="carros.html">Carros</a>
+            <a class="nav-txt nav-footer" href="eventos.html">Eventos</a>
+            <a class="nav-txt nav-footer" href="sobre-nos.html">Sobre Nós</a>
+            <a class="nav-txt nav-footer" href="contato.html">Contato</a>
+        </nav>
+
+        <p>© 2025 SuperCarros — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/design.js"></script>
+
+</body>
+
+</html>

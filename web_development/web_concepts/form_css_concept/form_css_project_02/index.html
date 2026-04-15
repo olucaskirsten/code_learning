@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Formulário de Contato</h2>
+
+        <div id="img">
+            <img src="https://www.newmetrics.net/files/uploads/2023/08/Student-Experience-Cover-2-1536x613.jpg" alt="estudantes">
+        </div>
+
+        <form action="" method="get">
+            <main>
+                <article>
+                    <div id="nome" class="espacamento">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nomebox" required placeholder="digite aqui">
+                    </div>
+
+                    <div id="email" class="espacamento">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="digite aqui">
+                    </div>
+
+                    <div id="telefone" class="espacamento">
+                        <label for="telelefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" required placeholder="digite aqui">
+                    </div>
+
+                    <div id="aniversario" class="espacamento">
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+                    <div id="comentarios" class="espacamento">
+                        <label for="comentarios">Comentários</label>
+                        <textarea name="comentarios" id="comentarios" rows="5" maxlength="100" placeholder="coloque seu feedback"></textarea>
+                    </div>
+                </article>
+
+                <aside>
+                    <div id="opcoes-cidades" class="espacamento">
+                        <div id="opcoestxt">
+                            <label for="cidadestxt">Opções de Cidade:</label>
+                        </div>
+
+                        <div id="cidade1">
+                            <input type="radio" name="cidade" id="cidade1" checked>
+                            <label for="cidade1">Curitiba/PR</label>
+                        </div>
+
+                        <div id="cidade2">
+                            <input type="radio" name="cidade" id="cidade2">
+                            <label for="cidade2">São Paulo/SP</label>
+                        </div>
+
+                        <div id="cidade3">
+                            <input type="radio" name="cidade" id="cidade3">
+                            <label for="cidade3">Floripa/SC</label>
+                        </div>
+                    </div>
+
+                    <div id="opcoes-transporte" class="espacamento">
+                        <label for="veiculotxt">Opções de Veículo:</label>
+
+                        <div id="veiculo1">
+                            <input type="checkbox" name="veiculo" id="veiculo1">
+                            <label for="veiculo1">Carro</label>
+                        </div>
+
+                        <div id="veiculo2">
+                            <input type="checkbox" name="veiculo" id="veiculo2">
+                            <label for="veiculo2">Bike</label>
+                        </div>
+
+                        <div id="veiculo3">
+                            <input type="checkbox" name="veiculo" id="veiculo3">
+                            <label for="veiculo3">Moto</label>
+                        </div>
+                    </div>
+
+                    <div id="satisfacao" class="espacamento">
+                        <label for="satisfacao">Nível de Satisfação:</label>
+                        <input type="range" name="satisfacao" id="satisfacao" min="1" max="10">
+                    </div>
+
+                    <div id="foto" class="espacamento">
+                        <label for="foto">Escolha uma Foto para o Cadastro:</label>
+                        <input type="file" name="foto" id="foto" accept=".jpg, .png">
+                    </div>
+
+                    <div id="estado" class="espacamento">
+                        <label for="estado">Estado onde mora hoje:</label>
+                        <select name="estado" id="estado">
+                            <option value="pr">PR</option>
+                            <option value="sc">SC</option>
+                            <option value="sp">SP</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                </aside>
+            </main>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    font-size: 60px
+}
+
+li {
+    font-size: 20px
+}
+
+#profissao {
+    color: red;
+}
+
+#servicos {
+    background-color: black;
+    color: white;
+}
+
+.fontegrande {
+    font-size: 25px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prova - Desenvolvimento Web Básico</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="cabecalho-esquerda">
+                <img src="img/minha-foto.jpg" alt="Foto do aluno" class="logo-foto">
+            </div>
+
+            <nav class="cabecalho-centro">
+                <ul class="menu">
+                    <li><a href="https://www.behance.net/olucaskirsten" target="_blank">Portfolio</a></li>
+                    <li><a href="https://www.instagram.com/olk.web" target="_blank">Instagram</a></li>
+                    <li><a href="https://github.com/olucaskirsten" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+
+            <div class="cabecalho-direita">
+                <form id="formLogin">
+                    <div class="grupo-campo">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <button type="button" id="btnLogar">LOGAR</button>
+                </form>
+                <p id="mensagemLogin"></p>
+            </div>
+        </header>
+
+        <main>
+            <section id="secao-conteudo">
+                <h1>Seja Bem-Vindo ao meu hub de projetos!</h1>
+                <p> Deixei alguns links rápidos na <strong>header</strong> pra que possa acessar minha <strong>redes sociais</strong> de forma rápida, abaixo deixarei uma lista de <strong>hardskills</strong> e um <strong>acesso aos meus dados de trabalho</strong>.
+                </p>
+
+                <ul id="lista-itens">
+                    <li>HTML, CSS e JavaScript avançado;</li>
+                    <li>Frameworks modernos (React, Next.js, Vue);</li>
+                    <li>Versionamento com Git e GitHub/GitLab;</li>
+                    <li>APIs REST e integração com back-end;</li>
+                    <li>Noções de banco de dados (MySQL, PostgreSQL, MongoDB).
+                    </li>
+                </ul>
+
+                <button type="button" id="btnExibirDados">EXIBIR DADOS</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desenvolvido para a Avaliação A2.2 - Desenvolvimento Web Básico</p>
+            <button type="button" id="btnModoCores">Modo Dark</button>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

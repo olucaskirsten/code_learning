@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário Responsivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="card" aria-labelledby="titulo-form">
+    <h1 id="titulo-form" class="title">Fale com a gente</h1>
+
+    <!-- Imagem entre o título e o formulário -->
+    <img class="hero" src="https://cdn.motor1.com/images/mgl/AkB8vL/s3/fiat-mobi-2023.jpg"
+      alt="Fiat Mobi 2023 visto de frente" width="200" height="auto" />
+
+    <!-- Formulário -->
+    <form action="#" method="post" novalidate>
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+      </div>
+
+      <div class="field">
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+      </div>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xablau Summit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/xablau-summit.png" alt="logo xablau">
+    </header>
+
+    <div class="cabecalho">
+        <form action="" method="get">
+            <h2>Formulário de Cadastro</h2>
+
+            <div id="login" class="espaco-form">
+                <label for="login">Login:</label>
+                <input type="email" name="login" id="login" placeholder="Digite o seu email aqui">
+            </div>
+
+            <div id="senha" class="espaco-form">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite o sua senha aqui">
+            </div>
+
+            <div id="botao" class="espaco-form">
+                <input type="submit" value="Entrar">
+            </div>
+        </form>
+
+        <h1 id="xablau-header-title">Xablau Summit</h1>
+    </div>
+
+    <main>
+        <form id="registration-form" action="">
+            <div id="nome" class="espaco-form">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+            </div>
+
+            <div id="last-name" class="espaco-form">
+                <label for="last-name">Nome:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="digite seu último nome">
+            </div>
+
+            <div id="email" class="espaco-form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="digite o seu email aqui">
+            </div>
+
+            <div id="interesse" class="espaco-form">
+                <label for="area">Área de Interesse:</label>
+                <select name="interesse" id="area">
+                    <option value="label">Área de interesse...</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="uxui">UX/UI Design</option>
+                </select>
+            </div>
+
+            <div id="perfil">
+                        <div id="label">
+                            <label for="label-profile" id="label-profile">Qual seu perfil?</label>
+                        </div>
+
+                        <div id="estudante">
+                            <input type="radio" name="profile" id="estudante" checked>
+                            <label for="estudante">Estudante</label>
+                        </div>
+
+                        <div id="profissional">
+                            <input type="radio" name="profile" id="profissional">
+                            <label for="profissional">Profissional</label>
+                        </div>
+
+                        <div id="recrutador">
+                            <input type="radio" name="profile" id="recrutador">
+                            <label for="recrutador">Recrutador</label>
+                        </div>
+                    </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

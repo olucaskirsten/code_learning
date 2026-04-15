@@ -1,0 +1,54 @@
+/* 4 – Transposta de uma matriz
+Dada uma matriz 3x2, imprima a sua transposta (2x3).
+Exemplo de saída:
+Digite os 6 valores da matriz 3x2 (linha por linha):
+Elemento [0][0]: 10
+Elemento [0][1]: 12
+Elemento [1][0]: 8
+Elemento [1][1]: 7
+Elemento [2][0]: 19
+Elemento [2][1]: 20
+Matriz original:
+|10  12 |
+|8   7 |
+|19  20 |
+Matriz transposta:
+|10  8  19 |
+|12  7  20 | */
+
+#include <stdio.h>
+
+int main() {
+    int matriz[3][2];
+
+    printf("Digite os 6 valores da matriz 3x2 (linha por linha):\n");
+    
+    // Leitura da matriz
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    // Exibição da matriz original
+    printf("\nMatriz original:\n\n");
+    for (int i = 0; i < 3; i++) {
+        printf("| ");
+        for (int j = 0; j < 2; j++)
+            printf("%3d ", matriz[i][j]);
+        printf("|\n");
+    }
+
+    // Exibição da matriz transposta
+    printf("\nMatriz transposta:\n\n");
+    for (int j = 0; j < 2; j++) {
+        printf("| ");
+        for (int i = 0; i < 3; i++)
+            printf("%3d ", matriz[i][j]);
+        printf("|\n");
+    }
+
+    return 0;
+}
+

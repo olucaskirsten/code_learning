@@ -1,0 +1,358 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+/* CSS HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+#nav-mobile.show {
+    display: flex;
+    /* ou block, dependendo do layout */
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.logo-img {
+    width: 200px;
+}
+
+.nav-txt {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-txt:hover {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+}
+
+.btn-contato {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(175, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+}
+
+/* CSS HERO */
+
+.hero {
+    background-image: url("../img/fundo-home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.txt-hero {
+    font-size: 20px;
+}
+
+.btn-hero {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* CSS BLOCO CARROS */
+
+#carros {
+    text-align: center;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bloco-carros {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    gap: 20px;
+}
+
+.bloco-1 {
+    flex: 1;
+}
+
+.bloco-2 {
+    flex: 1;
+}
+
+.bloco-3 {
+    flex: 1;
+}
+
+.blocos-dsgn {
+    border: 2px solid #363636;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.img-bloco {
+    width: 300px;
+    transition: 1s;
+}
+
+.img-bloco:hover {
+    width: 350px;
+}
+
+/* CSS BLOCO LOJA */
+
+#contato {
+    display: flex;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.loja {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.infos-loja {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.ft-loja {
+    width: 600px;
+}
+
+.btn-loja {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-loja:hover {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* CSS RODAPÉ */
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: red;
+    color: white;
+}
+
+.nav-footer {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+/* RESPONSIVIDADE - MOBILE */
+@media screen and (max-width: 450px) {
+
+    /* Esconde a nav (por padrão) — só abre quando .show for adicionada pelo JS */
+    #nav-mobile {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Mostra quando a classe show for aplicada */
+    #nav-mobile.show {
+        display: flex;
+        /* menu visível só ao clicar */
+    }
+
+    /* Desaparece a nav principal do header (desktop) */
+    .nav {
+        display: none;
+    }
+
+    /* Botão mobile: aparece somente no mobile */
+    .btn-mobile {
+        display: block;
+        background: red;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        z-index: 9999;
+    }
+
+    .bloco-carros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px;
+        gap: 20px;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0;
+    }
+
+    .loja {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .infos-loja {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ft-loja {
+        width: 100vw;
+        max-width: 100%;
+        display: block;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

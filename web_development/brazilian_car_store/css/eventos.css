@@ -1,0 +1,306 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+/* CSS HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+#nav-mobile.show {
+    display: flex;
+    /* ou block, dependendo do layout */
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.logo-img {
+    width: 200px;
+}
+
+.nav-txt {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-txt:hover {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+}
+
+.btn-contato {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(175, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+}
+
+/* CSS DA CAPA */
+
+.capa {
+    background-image: url("../img/fundo-sobrenos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.descricao-hero {
+    font-size: 15px;
+}
+
+/* CSS MIDNIGHT - MAIN*/
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+}
+
+.midnight,
+aside {
+    flex: 1;
+}
+
+.dados-evento {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.coluna1,
+.coluna2 {
+    flex: 1;
+}
+
+.img-midnight {
+    width: 500px;
+}
+
+.mapa {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* CSS PARTE DE BAIXO DA IMAGEM */
+
+hr {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* CSS CADASTRO */
+
+.cadastro-email {
+    text-align: center;
+}
+
+#botaoWhatsApp {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+#botaoWhatsApp:hover {
+    margin-top: 5px;
+    display: inline-block;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 63px;
+}
+
+.cadastro-titulo {
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.cadastro-txt {
+    font-size: 15px;
+}
+
+/* CSS RODAPÉ */
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: red;
+    color: white;
+}
+
+.nav-footer {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 450px) {
+
+    /* Esconde a nav (por padrão) — só abre quando .show for adicionada pelo JS */
+    #nav-mobile {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Mostra quando a classe show for aplicada */
+    #nav-mobile.show {
+        display: flex;
+        /* menu visível só ao clicar */
+    }
+
+    /* Desaparece a nav principal do header (desktop) */
+    .nav {
+        display: none;
+    }
+
+    /* Botão mobile: aparece somente no mobile */
+    .btn-mobile {
+        display: block;
+        background: red;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        z-index: 9999;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .capa {
+        padding-top: 170px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 30px;
+    }
+
+    .dados-evento {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-midnight,
+    iframe {
+        width: 100%;
+    }
+
+    .midnight {
+        text-align: center;
+    }
+}
