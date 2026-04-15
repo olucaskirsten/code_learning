@@ -1,0 +1,26 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Ambiente
+.env
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+
+# C#
+bin/
+obj/
