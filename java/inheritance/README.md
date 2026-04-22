@@ -1,12 +1,17 @@
-# inheritence
+# inheritance
 
-Estrutura criada a partir do PDF "8 - Herança.pdf".
+Structure created from the PDF **"8 - Herança.pdf"**.
 
-## Pastas
-- `concepts/`: exemplos conceituais extraídos e organizados em arquivos Java separados.
-- `challengue/`: resolução da atividade proposta no PDF.
+## 📁 Folders
 
-## Observações
-- Alguns trechos do PDF estavam quebrados ou com pequenas inconsistências de sintaxe.
-- Os arquivos foram organizados e ajustados para ficarem compiláveis em Java.
-- O nome da pasta `challengue` foi mantido exatamente como solicitado.
+- **concepts/**  
+  Conceptual examples extracted and organized into separate Java files.
+
+- **challengue/**  
+  Solution to the activity proposed in the PDF.
+
+## ⚠️ Notes
+
+- Some parts of the PDF contained broken snippets or minor syntax inconsistencies.  
+- The files were organized and adjusted to ensure they compile correctly in Java.  
+- The folder name **challengue** was kept exactly as requested.
