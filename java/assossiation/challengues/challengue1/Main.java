@@ -11,8 +11,14 @@ public class Main {
         Livro l2 = new Livro("A revolução dos bichos", "George Orwell");
         Emprestimo e2 = new Emprestimo(c2, l2, "08/04/2025");
 
+        Cliente c3 = new Cliente("Marcelo Fassina", 50);
+        Livro l3 = new Livro("Mágia do Amor", "O Pai Dele");
+        Emprestimo e3 = new Emprestimo(c3, l3, "01/01/2001");
+
         System.out.println(e1);
         System.out.println("\n---\n");
         System.out.println(e2);
+        System.out.println("\n---\n");
+        System.out.println(e3);
     }
 }

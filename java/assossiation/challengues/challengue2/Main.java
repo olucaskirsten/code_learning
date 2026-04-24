@@ -10,11 +10,17 @@ public class Main {
         Medico m2 = new Medico("Roberto", 50, "Ortopedia", "54321");
         Paciente p2 = new Paciente("Fernanda", 28, "Fratura no tornozelo");
 
+        Medico m3 = new Medico("Joãozinho", 18, "Dentista", "66666");
+        Paciente p3 = new Paciente("Maria", 15, "Banguela");
+
         Consulta c1 = new Consulta(m1, p1, "17/04/2026");
         Consulta c2 = new Consulta(m2, p2, "22/04/2026");
+        Consulta c3 = new Consulta(m3, p3, "06/06/2006");
 
         System.out.println(c1);
         System.out.println("---");
         System.out.println(c2);
+        System.out.println("---");
+        System.out.println(c3);
     }
 }
