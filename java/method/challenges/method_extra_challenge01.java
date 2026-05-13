@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio_extra1 {
+public class method_extra_challenge01 {
 
     public static void produto() {
         Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class arraylist_exercicio04 {
+public class arraylist_challenge04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> alunos = new ArrayList<>();

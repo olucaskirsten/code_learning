@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio_extra3 {
+public class exercicio_extra {
 
     public static void mediaArit(double nota1, double nota2, double nota3) {
         double mArit = (nota1 + nota2 + nota3) / 3;

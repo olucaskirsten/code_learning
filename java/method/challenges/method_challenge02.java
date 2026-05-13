@@ -1,7 +1,7 @@
 //package method_aula;
 import java.util.*;
  
-public class mtd_exercicio2 {
+public class method_challenge02 {
    public static int quadrado (int num) {
     return num * num;
 }

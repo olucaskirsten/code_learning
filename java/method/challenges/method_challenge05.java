@@ -1,7 +1,7 @@
 //package method_aula;
 import java.util.*;
  
-public class mtd_exercicio5{
+public class method_challenge05 {
 
    public static boolean resto(int num) {
     return num % 2 == 0;

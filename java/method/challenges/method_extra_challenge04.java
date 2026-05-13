@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio_extra4 {
+public class method_extra_challenge04 {
     public static void piramide(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {

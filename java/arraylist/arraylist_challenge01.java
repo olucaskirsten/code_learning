@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class arraylist_exercicio01 {
+public class arraylist_challenge01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

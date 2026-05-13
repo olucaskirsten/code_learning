@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
  
-public class arraylist_exercicio03 {
+public class arraylist_challenge03 {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
