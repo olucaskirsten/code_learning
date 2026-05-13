@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Dependencies
+/vendor/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
